@@ -15,11 +15,9 @@ export default async function getCoupons(token){
         if (res.ok && data) {
             return data;
         } else {
-            console.log("Null Data Received:", data, res.ok)
             return null;
         }
     }catch(err){
-        console.log("Error occured while getting coupons:", err)
         return null;
     }
 }
