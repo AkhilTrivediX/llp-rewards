@@ -2,7 +2,7 @@
 
 export default async function getCoupons(token){
     try{
-        const res = await fetch("http://localhost:5000/api/coupons",{
+        const res = await fetch(process.env.SERVER_BASE_URL+"/api/coupons",{
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
